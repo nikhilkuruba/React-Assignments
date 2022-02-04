@@ -1,0 +1,68 @@
+.page{
+    width: auto;
+    height: auto;
+    background: black;
+}
+.row{
+    display: block;
+    width: auto;
+}
+.yellow,.blue{
+    display: flex;
+}
+.yellow .content,.blue .content{
+    margin: 10px;
+    flex: 1 1 auto;
+}
+.red .content{
+    width: auto;
+    height: 200px;
+    margin: 10px;
+    background-color: red;
+}
+
+/*=============== Minimum-Width : 1024 ======================*/
+@media screen and (min-device-width:1024px){
+    .yellow .content{ 
+        height: 150px;
+        background-color: yellow;
+    }
+    .blue .content{
+        height: 150px;
+        background-color: blue;
+    }
+}
+/*========= Minimum-Width: 768px ===========*/
+@media screen and (min-device-width:765px) and (max-device-width:1023px) {
+    .yellow .content{
+        height: 150px;
+        background-color: yellow;
+    }
+    .blue{
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .blue .content{
+        height: 100px;
+        background-color: blue;
+    }
+}
+/*========= Minimum-Width: 320px ===========*/
+@media screen and (min-device-width:320px) and (max-device-width:767px) {
+    .yellow{
+        flex-flow: column wrap;
+        justify-content: space-between;        
+    }
+    .yellow .content{
+        height: 100px;
+        background-color: yellow;
+    }
+    .blue{
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .blue .content{
+        height: 100px;
+        background-color: blue;
+    }
+}

@@ -1,7 +1,14 @@
-.App {
+.container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.image{
+  border-radius: 5px;
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +43,11 @@
     transform: rotate(360deg);
   }
 }
+*/
+.details{
+  text-align: left;
+}
+.name{
+  color: aqua;
+}
+

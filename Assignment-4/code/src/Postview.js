@@ -6,7 +6,7 @@ import heart from './images/heart.png';
 import options from './images/more.png';
 import tag from './images/tag.png';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 const Postview = () => {
